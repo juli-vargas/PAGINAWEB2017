@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml/" xml:lang="es" lang="es-es"
+<html>
+
+	<head>
+		<link href="CSS/style.css" rel="stylesheet" type="text/css">
+        </head>
+
+	<body>
+		<div id="principal">
+        	<div id= "header">  
+          
+
+<h1 align=center>  <img src="img/logo.jpg" width="70" height="70" align=left vertical-align=center alt=""/>
+
+
+  VETERINARIA JULI & PIER</h1>
+
+   	
+ 
+   	  	  </div>
+          <div class="clear">
+        	</div>
+        	<div id="menu">
+        		<ul id="menuh">
+  					<li><a href="index.html">Inicio</a></li>
+  					<li><a href="Novedades.html">Novedades</a></li>
+            <li><a href="PRODUCTOS.HTML">Productos</a></li>
+  					<li><a href="InformacionAves.html">Información</a>
+                    <ul>
+						<li><a href="InformacionAves.html">Informacion<br> Aves</a></li>
+						<li><a href="InformacionRoedores.html">Informacion <br>Roedores</a></li>
+						<li><a href="InformacionPerros.html">Informacion <br>Perros</a></li>
+						<li><a href="">Informacion <br>Gatos</a>
+						</li>
+					</ul>
+                    </li>
+  					<li><a href="Contacto.html" style="border-right: none">Contacto</a></li>
+            <li><a href="iniciarsesion.html">Iniciar Sesión</a>
+            <li><a href="registro.html">Regístrate</a></li>
+				</ul>
+        	</div>
+        	<div id="column-left">
+        		<ul id="menuh">
+  					<li><a href="nelionuevo.html">Nelio, (nuevo)</a></li>
+  					<li><a href="shampooperro.html">Shampoo perro, (nuevo)</a></li>
+  					<li><a href="artrosenil.html">Artrosenil, (nuevo)</a></li>
+  					
+  					<li><a href="collarantiparasitario.html" style="border-right: none"> Collar Antiparasitario, (nuevo)</a></li>
+				</ul>
+        	</div>
+
+
+          <body>
+         <div id="divregistro">
+         
+
+         <h3 align="left">
+
+         FORMULARIO DE REGISTRO </h3> 
+
+         <div id="column-right">
+            <div>
+                <script type="text/javascript">
+function validate() {
+var txt = document.getElementById("name1");
+var txt1 = document.getElementById("mail");
+var txt2 = document.getElementById("coment");
+var txt3 = document.getElementById("sexo");
+if(txt.value== "" || txt.value== null) {
+alert("Porfavor, ingrese su nombre");
+txt.style.border = "2px solid red";
+return false;
+} else {
+txt.style.border = "";
+}
+if(txt1.value== "" || txt1.value== null) {
+alert("Porfavor, ingrese su Mail");
+txt1.style.border = "2px solid red";
+return false;
+} else {
+txt.style.border = "";
+}
+if(txt2.value== "" || txt2.value== null) {
+alert("Porfavor, ingrese su dirección ");
+txt2.style.border = "2px solid red";
+return false;
+} else {
+txt.style.border = "";
+alert("Registro exitoso");
+}
+
+}
+
+</script>
+
+<form action="" method="post" onsubmit="return validate()">
+<td bgcolor="#D7D7FF"><strong>Nombre completo *</strong></td> <form><input type="text" name="name1" id="name1" /><br><br>
+<td bgcolor="#D7D7FF"><strong>Correo electrónico *</strong></td> <input type="text" name="mail" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" /><br><br>
+<td bgcolor="#D7D7FF"><strong>Dirección *</strong></td> <input type="text" name="coment" id="coment" /><br><br>
+<tr>
+      <td bgcolor="#D7D7FF"><strong>Sexo</strong></td>
+      <td bgcolor="#FFFFFF">
+        <input name="sexo" type="radio"/> Masculino
+        <input name="sexo" type="radio"/> Femenino </td>
+    </tr><br><br>
+
+    <tr>
+      <td bgcolor="#D7D7FF"><strong>Ciudad</strong></td>
+      <td bgcolor="#FFFFFF">
+        <select name="ciudad" id="ciudad">
+          <option value="">Seleccione</option>
+          <option value="1">Montevideo</option>
+          <option value="2">Canelones</option>
+          <option value="3">San José</option>
+          <option value="4">Flores</option>
+          <option value="5">Florida</option>
+          <option value="7">Durazno</option>
+          <option value="8">Lavalleja</option>
+          <option value="9">Soriano</option>
+        </select>     
+     </td>
+
+</tr><br><br>
+
+
+
+<body>
+        <strong>Contraseña *</strong><input type="password" id="pass" name="pass">
+          <small>Ocultar contraseña</small>
+          <input type="checkbox" id="mostrar" name="mostrar" checked onClick="mostrarPassword()">
+     </body>
+
+     <!-------------- Aca "cambio" el lenguaje a JavaScript---------->
+
+     <script language="javascript" type="text/javascript">
+          function mostrarPassword(){
+    //Accedo a los elementos del formulario
+    var chkbox = document.getElementById("mostrar"); 
+    var contenido = document.getElementById("pass");
+    var atributo = contenido.getAttribute("type");
+        
+    //Pregunto si el checkbox esta marcado
+    if(chkbox.checked){
+      contenido.setAttribute("type","password"); //Si el checkbox esta marcado, el atributo type se convierte a password
+    }else{
+      contenido.setAttribute("type","text"); //Si el checkbox esta sin marcar, el atributo type se convierte a text
+    }
+  }
+     </script>
+</html> <br><br><br>
+
+     <input type="submit" value="REGISTRARME"/>
+
+          </div>
+          <div class="clear">
+          </div>
+          <div id="footer">
+            VETERINARIA JULI & PIER/ Grecia 3163, entre Mexico y Suiza-Cerro <BR>
+            Contacto-091 756 351 / 098 306 449
+          </div>
+      </div>
+  </body>
+
+</html>

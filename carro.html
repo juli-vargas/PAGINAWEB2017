@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml/" xml:lang="es" lang="es-es"
+<html>
+
+	<head>
+		<link href="CSS/style.css" rel="stylesheet" type="text/css">
+  </head>
+
+<html lang="es">
+<head>
+<figure>
+    <img src="IMG/carrito.png" style="width:140px;height:128px;">
+    <th><h1 style="text-align: left; color: rgb();">Tus Compras</h1>
+    </figure>
+
+  </tr>
+    <meta charset="utf-8">
+    <title>Carrito de compras con php y ajax</title>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="functions/functions.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+</head>
+<body>
+<div class="row">
+    <php
+    ids = array("1","2","3","4");
+    precios = array("100","200","300","400");
+    nombres = array("artosenil","juego para aves","nilio","shampoo para perros");
+    >
+    <div class="large-12 columns">
+        <div class="titulo"></div>
+        <table class="content_cart panel radius large-12"></table>
+    </div>
+     <?php
+    for($i=0;$i<count($ids);$i++){ 
+    ?>
+    <ul class="pricing-table large-3 columns">
+            <form class="add" method="POST" action="process_cart/insert.php" accept-charset="UTF-8">
+                <input name="id" type="hidden" value="<?php echo $ids[$i] ?>"><br />
+                <li class="title" for="nombre">Producto</li> 
+                <li class="title"><select id="Producto" name="Producto">
+                    <option value="1">Nilio</option>
+                    <option value="2">Juegos para aves</option>
+                    <option value="3">Shampoo para perros</option>
+                    <option value="4">Artosenil</option>
+                    <option value="5">Novivac</option>
+                </select>
+                </li>      
+                <li class="bullet-item" for="cantidad">Cantidad</li>            
+                <li class="title"><select id="cantidad" name="cantidad">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                </li>
+                <br />     
+                <input name="nombre" type="hidden" value="<?php echo $nombres[$i] ?>" id="name"><br />
+                <li class="price">Precio: <?php echo $precios[$i] ?></li>            
+                <input name="precio" type="hidden" value="<?php echo $precios[$i] ?>" id="precio"><br />
+            </form>    
+            <button>Añadir</button>        
+
+    </ul>
+    <?php } ?>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	</div>
+        	<div class="clear">
+        	</div>
+        	<div id="footer">
+        		VETERINARIA JULI & PIER/ Grecia 3163, entre Mexico y Suiza-Cerro <BR>
+            Contacto-091 756 351 / 098 306 449
+        	</div>
+    	</div>
+	</body>
+
+</html>
